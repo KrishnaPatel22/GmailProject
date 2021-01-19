@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.testing.TestFile
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 140.448 s <<< FAILURE! - in com.testing.TestFile
+mail(com.testing.TestFile)  Time elapsed: 25.578 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.SocketTimeoutException: Read timed out
+Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
+System info: host: 'DESKTOP-911GN6F', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+	at com.testing.TestFile.mail(TestFile.java:42)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at com.testing.TestFile.mail(TestFile.java:42)
+
+trashMail(com.testing.TestFile)  Time elapsed: 22.27 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.SocketTimeoutException: timeout
+Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
+System info: host: 'DESKTOP-911GN6F', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+	at com.testing.TestFile.trashMail(TestFile.java:52)
+Caused by: java.net.SocketTimeoutException: timeout
+	at com.testing.TestFile.trashMail(TestFile.java:52)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at com.testing.TestFile.trashMail(TestFile.java:52)
+
